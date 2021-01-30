@@ -6,10 +6,10 @@ const Header = props => {
   return (
     <>
       <figure className="image is-128x128">
-        <img src={titleReducer({ car: props.image })} alt={props.car.name} />
+        <img src={titleReducer({ car: props.image })} alt={titleReducer({car: props.name })} />
       </figure>
-      <h2>{props.car.name}</h2>
-      <p>Amount: ${props.car.price}</p>
+      <h2>{titleReducer({ car: props.name })}</h2>
+      <p>Amount: ${titleReducer({ car: props.price })}</p>
     </>
   );
 };

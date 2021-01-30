@@ -12,10 +12,7 @@ const initialState = {
 }
 
 export const titleReducer = (state = initialState, action) => {
-    switch (action.type) {
-
-
-
-        default: return state
+    switch (action) {
+            default: return state
     } 
 }
